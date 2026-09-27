@@ -1,0 +1,16 @@
+:root {
+  --accent: #315b8a;
+  --accent-hover: #1f456f;
+}
+
+:root[data-theme="dark"] {
+  --accent: #8db8e8;
+  --accent-hover: #b8d4f2;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+

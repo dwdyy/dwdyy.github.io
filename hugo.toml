@@ -1,0 +1,55 @@
+baseURL = 'https://dwdyy.github.io/'
+locale = 'zh-CN'
+defaultContentLanguage = 'zh-cn'
+title = 'Dongwei 的技术笔记'
+theme = 'austere'
+copyright = '© 2026 Dongwei Wang'
+enableRobotsTXT = true
+timeZone = 'Asia/Hong_Kong'
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+[params]
+  description = '一名计算机学生的学习笔记：算法、系统、工程与数学。'
+  author = 'Dongwei Wang'
+  keywords = '计算机科学, 编程, 算法, 系统, 数学, Hugo'
+  strapline = '代码、数学与持续学习'
+  footerText = '© 2026 Dongwei Wang · Built with Hugo and the Austere theme'
+  siteIcon = 'quill'
+  undatedPosition = 'below'
+
+[menus]
+  [[menus.main]]
+    name = '首页'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = '文章'
+    pageRef = '/posts'
+    weight = 20
+  [[menus.main]]
+    name = '关于'
+    pageRef = '/about'
+    weight = 30
+  [[menus.main]]
+    name = '标签'
+    pageRef = '/tags'
+    weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+  [markup.highlight]
+    noClasses = false
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
