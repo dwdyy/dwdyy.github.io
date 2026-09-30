@@ -17,9 +17,7 @@ timeZone = 'Asia/Hong_Kong'
   keywords = '计算机科学, 编程, 算法, 系统, 数学, Hugo'
   strapline = ''
   footerText = '© 2026 Dongwei Wang · Built with Hugo and the Austere theme'
-  favicon = '/images/github-avatar.png'
-  profilePicture = '/images/github-avatar.png'
-  siteIcon = '/images/github-avatar.png'
+  siteIcon = 'quill'
   undatedPosition = 'below'
 
 [menus]
