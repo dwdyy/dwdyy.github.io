@@ -36,8 +36,8 @@ award = '银牌'
 year = '2024'
 kind = 'silver'
 [[awards]]
-name = '第十六届蓝桥杯全国总决赛'
-award = '一等奖'
+name = '第十六届蓝桥杯总决赛'
+award = '全国一等奖'
 year = '2025'
 kind = 'first'
 [[awards]]
