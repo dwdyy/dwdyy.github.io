@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{{ if .IsHome }}{{ site.Title }} · 王东威{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Description | default site.Params.description }}">
+  <meta name="author" content="{{ site.Params.author }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} · 王东威{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description" content="{{ .Description | default site.Params.description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ range .AlternativeOutputFormats }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">{{ end }}
+  {{ if eq .Kind "404" }}<meta name="robots" content="noindex">{{ end }}
+  {{ $css := slice (resources.Get "css/minimal-light.css") (resources.Get "css/resume.css") | resources.Concat "css/site.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ $noop := .WordCount }}
+  {{ if or (.Store.Get "hasMath") (not .IsPage) }}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.css" integrity="sha384-u1zONI5gPXUx0UKI62c75/zww972y0v2rSK5ZYlVdS6xEuWDeZWUI66v6t1gvlXJ" crossorigin="anonymous">
+  {{ end }}
+</head>
+<body>
+  <a href="#main" class="skip-link">跳转到正文</a>
+  <div class="wrapper">
+    <header class="profile">
+      {{ with hugo.Data.resume }}
+      <h1><a href="{{ site.Home.RelPermalink }}">{{ .name }}</a></h1>
+      <p class="name-zh">{{ .name_zh }}</p>
+      <p class="position">{{ .position }}<br><a class="affiliation" href="{{ .affiliation_url }}">{{ .affiliation }} · {{ .affiliation_en }}</a></p>
+      <p class="email"><a href="mailto:{{ .email }}">{{ .email }}</a></p>
+      <p class="profile-links"><a href="{{ .github }}">GitHub ↗</a><span aria-hidden="true">·</span><button type="button" onclick="window.print()">打印简历</button></p>
+      <p class="availability">{{ .availability }}</p>
+      {{ end }}
+      <nav class="section-nav" aria-label="主页分区">
+        {{ range site.Menus.main }}
+        <a href="{{ if $.IsHome }}{{ replace .URL "/#" "#" }}{{ else }}{{ .URL | relURL }}{{ end }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+    </header>
+    <section id="main" class="main-content" role="main" aria-label="简历正文">
+      {{ block "main" . }}{{ .Content }}{{ end }}
+      <div class="site-footer"><p>© {{ now.Year }} {{ site.Params.author }}<br>Built with Hugo · <a href="https://github.com/yaoyao-liu/minimal-light">Minimal Light</a> theme, adapted.</p></div>
+    </section>
+  </div>
+</body>
+</html>

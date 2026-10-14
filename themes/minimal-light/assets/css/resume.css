@@ -1,0 +1,125 @@
+/* Local CV additions to the upstream Minimal Light stylesheet. */
+:root { color-scheme: light dark; --ink: #043361; --body: #525965; --muted: #757e89; --rule: #e7ebef; --paper: #fff; --soft: #f5f7fa; }
+html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+body { background: var(--paper); color: var(--body); margin: 0; padding: 0; font: 16px/1.75 Georgia, 'Noto Serif SC', 'Songti SC', SimSun, serif; -webkit-font-smoothing: antialiased; }
+a { color: #246b98; }
+a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+a:focus-visible, button:focus-visible { outline: 2px solid #246b98; outline-offset: 5px; border-radius: 2px; }
+strong { font-weight: 600; }
+.wrapper { width: 1000px; }
+header.profile { width: 250px; padding-top: 78px; }
+.profile h1 { margin-bottom: 7px; font-size: 30px; letter-spacing: -.6px; }
+.profile h1 a { color: var(--ink); text-decoration: none; }
+.name-zh { margin-bottom: 22px; font-size: 21px; letter-spacing: .2em; color: var(--ink); }
+.position { line-height: 1.95; margin-bottom: 14px; font-size: 15px; }
+.affiliation { color: var(--body); }
+.email { font: 12px/1.7 ui-monospace, 'Cascadia Code', Consolas, monospace; overflow-wrap: anywhere; margin-bottom: 15px; }
+.email a { color: var(--body); }
+.profile-links { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 21px; font: 14px/1.7 system-ui, sans-serif; }
+.profile-links button { font: inherit; border: 0; background: transparent; color: #246b98; cursor: pointer; padding: 0; }
+.profile-links button:hover { text-decoration: underline; text-underline-offset: 4px; }
+.availability { font-size: 13px; color: var(--ink); margin: 0 0 24px; }
+.availability::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #45866f; margin-right: 8px; vertical-align: middle; }
+.section-nav { border-top: 1px solid var(--rule); padding: 20px 0 0; margin: 0 32px; display: grid; gap: 8px; font: 14px/1.8 system-ui, sans-serif; }
+.section-nav a { color: var(--muted); }
+.section-nav a:hover { color: var(--ink); }
+section.main-content { width: 680px; padding-top: 76px; padding-bottom: 28px; }
+.resume-section { margin-bottom: 40px; scroll-margin-top: 28px; }
+.resume-section h2 { color: var(--ink); font-size: 22px; font-weight: 600; line-height: 1.5; margin: 0 0 21px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.heading-en { color: var(--muted); font-size: 15px; font-weight: 400; margin-left: 10px; }
+.intro p { margin-bottom: 15px; }
+.intro p:last-child { margin-bottom: 0; }
+.interests { font-size: 15px; padding-top: 3px; }
+.interests .label { color: var(--ink); font-weight: 600; margin-right: 16px; }
+.entry-heading { display: flex; justify-content: space-between; gap: 18px; align-items: baseline; }
+.entry-heading h3 { color: var(--ink); font-size: 17px; line-height: 1.6; margin: 0 0 8px; }
+.location { color: var(--muted); font-size: 13px; font-weight: 400; margin-left: 12px; }
+.period, .award-year { font-family: system-ui, sans-serif; font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); }
+.education-entry p { margin-bottom: 10px; }
+.education-details { margin: 0; padding-left: 20px; font-size: 15px; }
+.awards-list { list-style: none; padding: 0; margin: 0; }
+.award-row { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.award-row:first-child { padding-top: 0; }
+.award-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.award-year { padding-top: 3px; }
+.award-content { font-size: 15px; line-height: 1.8; }
+.award-badge { display: inline-block; margin-left: 9px; padding: 0 7px; font: 600 12px/1.9 system-ui, sans-serif; border-radius: 3px; background: var(--soft); color: var(--ink); vertical-align: 1px; white-space: nowrap; }
+.award-badge.gold, .award-badge.first { color: #896219; background: #faf1db; }
+.award-badge.silver { color: #576878; background: #edf1f5; }
+.award-badge.bronze { color: #935b37; background: #f9ece4; }
+.project-entry { margin-bottom: 30px; }
+.project-entry:last-child { margin-bottom: 0; }
+.project-entry p { margin: 0 0 10px; font-size: 15px; }
+.project-entry .project-meta { color: var(--muted); font: 12px/1.8 system-ui, sans-serif; margin-bottom: 12px; }
+.project-meta span { margin: 0 5px; }
+.project-entry ul { padding-left: 20px; margin: 0; font-size: 15px; }
+.project-entry li { margin-bottom: 7px; }
+.skills-list { margin: 0; font-size: 15px; }
+.skills-list > div { display: grid; grid-template-columns: 84px 1fr; gap: 14px; margin-bottom: 9px; }
+.skills-list dt { color: var(--ink); font-weight: 600; }
+.skills-list dd { margin: 0; }
+.site-footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--rule); font: 12px/1.9 system-ui, sans-serif; color: var(--muted); }
+.site-footer p { margin-bottom: 0; }
+.skip-link { position: absolute; left: 20px; top: -100px; background: var(--paper); padding: 8px 14px; z-index: 10; }
+.skip-link:focus { top: 10px; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 8px 0; }
+.reading-page h2 { line-height: 1.5; }
+pre { max-width: 100%; box-sizing: border-box; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #a0c7e7; --body: #d2d6dd; --muted: #949dac; --rule: #343c47; --paper: #20212b; --soft: #2b3340; }
+  a, .profile-links button { color: #91badc; }
+  .award-badge.gold, .award-badge.first { color: #e6c578; background: #3c3526; }
+  .award-badge.silver { color: #becddd; background: #303b48; }
+  .award-badge.bronze { color: #e2b18f; background: #403129; }
+  pre, code { color: var(--body); }
+  pre { background: var(--soft); border-color: var(--rule); }
+}
+@media screen and (max-width: 1080px) and (min-width: 961px) {
+  .wrapper { width: calc(100% - 80px); }
+  header.profile { width: 220px; }
+  section.main-content { width: calc(100% - 280px); }
+}
+@media screen and (max-width: 960px) {
+  body { padding: 0 28px; }
+  div.wrapper { max-width: 680px; margin: 0 auto; width: auto; }
+  header.profile { width: auto; position: static; padding: 42px 0 24px; }
+  .name-zh { margin-bottom: 15px; }
+  .position { margin-bottom: 10px; }
+  .availability { margin-bottom: 20px; }
+  .section-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin: 0; padding-top: 17px; }
+  section.main-content { float: none; width: auto; padding: 28px 0; margin-bottom: 0; border: 0; border-top: 1px solid var(--rule); }
+}
+@media screen and (max-width: 480px) {
+  body { padding: 0 22px; font-size: 15px; }
+  header.profile { padding-top: 33px; }
+  .profile h1 { font-size: 28px; }
+  .resume-section { margin-bottom: 32px; }
+  .resume-section h2 { font-size: 20px; margin-bottom: 17px; }
+  .heading-en { font-size: 12px; margin-left: 7px; }
+  .entry-heading { flex-wrap: wrap; gap: 0; margin-bottom: 9px; }
+  .entry-heading h3 { width: 100%; margin-bottom: 3px; }
+  .award-row { grid-template-columns: 36px 1fr; gap: 10px; }
+  .award-content { font-size: 14px; }
+  .skills-list > div { grid-template-columns: 70px 1fr; gap: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  :root { color-scheme: light; --ink: #142b43; --body: #333; --muted: #555; --rule: #ccc; --paper: #fff; }
+  @page { size: A4; margin: 15mm; }
+  body { padding: 0; font-size: 10pt; line-height: 1.5; background: #fff; color: #333; }
+  div.wrapper { width: auto; margin: 0; }
+  header.profile { float: none; position: static; width: auto; padding: 0 0 16px; text-align: left; }
+  .profile h1 { font-size: 24px; }
+  .name-zh { font-size: 16px; margin: 0 0 8px; }
+  .profile p { margin: 0 0 5px; }
+  .section-nav, .profile-links, .site-footer, .skip-link { display: none; }
+  section.main-content { border: 0; width: auto; float: none; padding: 0; }
+  .resume-section { margin-bottom: 20px; }
+  .resume-section h2 { font-size: 15px; padding-bottom: 5px; margin-bottom: 10px; break-after: avoid; }
+  .entry-heading h3 { font-size: 12px; }
+  .project-entry p, .project-entry ul, .education-details, .education-entry p, .award-content, .skills-list { font-size: 10pt; }
+  .award-row { padding: 6px 0; break-inside: avoid; }
+  .project-entry { margin-bottom: 16px; }
+  .project-entry li { margin-bottom: 3px; }
+  a { color: #142b43; }
+}

@@ -1,4 +1,5 @@
 /public/
+/public-academic-preview/
 /resources/_gen/
 /hugo_stats.json
 /.hugo_build.lock

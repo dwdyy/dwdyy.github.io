@@ -2,7 +2,7 @@ baseURL = 'https://dwdyy.github.io/'
 locale = 'zh-CN'
 defaultContentLanguage = 'zh-cn'
 title = 'Dongwei Wang'
-theme = 'austere'
+theme = 'minimal-light'
 copyright = '© 2026 Dongwei Wang'
 enableRobotsTXT = true
 timeZone = 'Asia/Hong_Kong'
@@ -12,27 +12,34 @@ timeZone = 'Asia/Hong_Kong'
   category = 'categories'
 
 [params]
-  description = ''
+  description = '王东威，电子科技大学软件工程本科生。关注大语言模型与多模态大模型，寻求本科科研实习机会。'
   author = 'Dongwei Wang'
   keywords = '计算机科学, 编程, 算法, 系统, 数学, Hugo'
   strapline = ''
-  footerText = '© 2026 Dongwei Wang · Built with Hugo and the Austere theme'
-  siteIcon = 'quill'
+  footerText = '© 2026 Dongwei Wang'
   undatedPosition = 'below'
 
 [menus]
   [[menus.main]]
-    name = '首页'
-    pageRef = '/'
+    name = '关于我'
+    url = '/#about'
     weight = 10
   [[menus.main]]
-    name = '文章'
-    pageRef = '/posts'
+    name = '教育背景'
+    url = '/#education'
     weight = 20
   [[menus.main]]
-    name = '标签'
-    pageRef = '/tags'
+    name = '奖项与荣誉'
+    url = '/#honors'
+    weight = 30
+  [[menus.main]]
+    name = '项目与实践'
+    url = '/#projects'
     weight = 40
+  [[menus.main]]
+    name = '技能'
+    url = '/#skills'
+    weight = 50
 
 [markup]
   [markup.goldmark]

@@ -1,0 +1,9 @@
+name = 'Minimal Light (Hugo adaptation)'
+license = 'CC0-1.0'
+licenselink = 'https://github.com/yaoyao-liu/minimal-light/blob/main/LICENSE'
+description = 'Hugo adaptation of the Minimal Light academic homepage theme.'
+homepage = 'https://github.com/yaoyao-liu/minimal-light'
+min_version = '0.146.0'
+[author]
+  name = 'Yaoyao Liu'
+  homepage = 'https://github.com/yaoyao-liu'
