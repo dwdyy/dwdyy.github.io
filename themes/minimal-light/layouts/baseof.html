@@ -31,7 +31,6 @@
       <p class="position">{{ .position }}<br><a class="affiliation" href="{{ .affiliation_url }}">{{ .affiliation }} · {{ .affiliation_en }}</a></p>
       <p class="email"><a href="mailto:{{ .email }}">{{ .email }}</a></p>
       <p class="profile-links"><a href="{{ .github }}">GitHub ↗</a><span aria-hidden="true">·</span><button type="button" onclick="window.print()">打印简历</button></p>
-      <p class="availability">{{ .availability }}</p>
       {{ end }}
       <nav class="section-nav" aria-label="主页分区">
         {{ range site.Menus.main }}

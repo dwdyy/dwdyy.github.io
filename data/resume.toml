@@ -7,8 +7,6 @@ affiliation_en = 'UESTC'
 affiliation_url = 'https://www.uestc.edu.cn/'
 email = '2024090910009@std.uestc.edu.cn'
 github = 'https://github.com/dwdyy'
-availability = '寻求本科科研实习机会'
-interests = ['大语言模型', '多模态大模型']
 
 [[education]]
 institution = '电子科技大学'
@@ -47,30 +45,6 @@ name = '中国高校计算机大赛 · 团体程序设计天梯赛'
 award = '全国个人一等奖'
 year = '2025'
 kind = 'first'
-
-[[projects]]
-title = '从零实现 Transformer 语言模型'
-period = '2025 — 至今'
-role = '个人项目'
-technologies = 'Python / PyTorch / C++ / BPE / Transformer'
-summary = '围绕分词、模型结构与训练流程，从零实现可配置的 Transformer 语言模型及训练框架。'
-details = [
-  '实现 BPE 分词器的训练、编码与解码，支持特殊 token 处理和文本流式编码；使用 C++ 实现词频统计等核心逻辑，并通过 pybind11 与 Python 集成。',
-  '基于 PyTorch 实现 Embedding、RMSNorm、RoPE、SwiGLU、多头因果自注意力及 Transformer 语言模型，并通过单元测试验证核心模块。',
-  '编写训练脚本，支持分块编码、内存映射加载、AdamW、余弦学习率调度、验证集评估及检查点保存与恢复。',
-  '基于 TinyStories 数据集子集开展训练实验，支持配置模型结构、上下文长度、批大小等超参数。'
-]
-[[projects]]
-title = '算法竞赛与程序设计训练'
-period = '2024 — 至今'
-role = '长期训练'
-technologies = 'C / C++ / 数据结构与算法'
-summary = '长期参与程序设计竞赛训练，积累算法建模、复杂度分析、代码实现和调试能力。'
-details = [
-  '系统训练数据结构、动态规划、图论、字符串、数学、计算几何等算法专题。',
-  '在限定时间内完成问题抽象、算法设计、复杂度估计与代码实现。',
-  '通过 ICPC 区域赛等比赛积累团队协作和压力环境下的调试经验。'
-]
 
 [[skills]]
 label = '编程语言'

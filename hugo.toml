@@ -12,7 +12,7 @@ timeZone = 'Asia/Hong_Kong'
   category = 'categories'
 
 [params]
-  description = '王东威，电子科技大学软件工程本科生。关注大语言模型与多模态大模型，寻求本科科研实习机会。'
+  description = '王东威，电子科技大学软件工程本科生。关注智能体、强化学习与大模型。'
   author = 'Dongwei Wang'
   keywords = '计算机科学, 编程, 算法, 系统, 数学, Hugo'
   strapline = ''
@@ -29,17 +29,13 @@ timeZone = 'Asia/Hong_Kong'
     url = '/#education'
     weight = 20
   [[menus.main]]
+    name = '研究经历'
+    url = '/#research'
+    weight = 25
+  [[menus.main]]
     name = '奖项与荣誉'
     url = '/#honors'
     weight = 30
-  [[menus.main]]
-    name = '项目与实践'
-    url = '/#projects'
-    weight = 40
-  [[menus.main]]
-    name = '技能'
-    url = '/#skills'
-    weight = 50
 
 [markup]
   [markup.goldmark]

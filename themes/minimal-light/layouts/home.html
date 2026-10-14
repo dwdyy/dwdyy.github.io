@@ -2,7 +2,6 @@
 <div class="resume-section intro" id="about">
   <h2>关于我 <span class="heading-en">About</span></h2>
   {{ .Content }}
-  <p class="interests"><span class="label">研究兴趣</span>{{ delimit hugo.Data.resume.interests " · " }}</p>
 </div>
 <div class="resume-section" id="education">
   <h2>教育背景 <span class="heading-en">Education</span></h2>
@@ -14,6 +13,9 @@
   </div>
   {{ end }}
 </div>
+<div class="resume-section" id="research">
+  <h2>研究经历 <span class="heading-en">Research Experience</span></h2>
+</div>
 <div class="resume-section" id="honors">
   <h2>奖项与荣誉 <span class="heading-en">Honors &amp; Awards</span></h2>
   <ol class="awards-list">
@@ -21,20 +23,5 @@
     <li class="award-row"><span class="award-year">{{ .year }}</span><div class="award-content"><span class="award-name">{{ .name }}</span><strong class="award-badge {{ .kind }}">{{ .award }}</strong></div></li>
     {{ end }}
   </ol>
-</div>
-<div class="resume-section" id="projects">
-  <h2>项目与实践 <span class="heading-en">Projects &amp; Experience</span></h2>
-  {{ range hugo.Data.resume.projects }}
-  <article class="project-entry">
-    <div class="entry-heading"><h3>{{ .title }}</h3><span class="period">{{ .period }}</span></div>
-    <p class="project-meta">{{ .role }} <span aria-hidden="true">·</span> {{ .technologies }}</p>
-    <p>{{ .summary }}</p>
-    <ul>{{ range .details }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
-  {{ end }}
-</div>
-<div class="resume-section" id="skills">
-  <h2>技能 <span class="heading-en">Skills</span></h2>
-  <dl class="skills-list">{{ range hugo.Data.resume.skills }}<div><dt>{{ .label }}</dt><dd>{{ .text }}</dd></div>{{ end }}</dl>
 </div>
 {{ end }}
