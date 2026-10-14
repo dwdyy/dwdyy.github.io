@@ -19,8 +19,8 @@
 <div class="resume-section" id="honors">
   <h2>奖项与荣誉 <span class="heading-en">Honors &amp; Awards</span></h2>
   <ol class="awards-list">
-    {{ range hugo.Data.resume.awards }}
-    <li class="award-row"><span class="award-year">{{ .year }}</span><div class="award-content"><span class="award-name">{{ .name }}</span><strong class="award-badge {{ .kind }}">{{ .award }}</strong></div></li>
+    {{ range sort hugo.Data.resume.awards "date" "desc" }}
+    <li class="award-row"><time class="award-year" datetime="{{ .date }}">{{ replace .date "-" "." }}</time><div class="award-content"><span class="award-name">{{ .name }}</span>{{ if .award }}<strong class="award-badge {{ .kind }}">{{ .award }}</strong>{{ end }}</div></li>
     {{ end }}
   </ol>
 </div>

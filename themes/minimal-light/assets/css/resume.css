@@ -38,7 +38,7 @@ section.main-content { width: 680px; padding-top: 76px; padding-bottom: 28px; }
 .education-entry p { margin-bottom: 10px; }
 .education-details { margin: 0; padding-left: 20px; font-size: 15px; }
 .awards-list { list-style: none; padding: 0; margin: 0; }
-.award-row { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.award-row { display: grid; grid-template-columns: 64px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
 .award-row:first-child { padding-top: 0; }
 .award-row:last-child { border-bottom: 0; padding-bottom: 0; }
 .award-year { padding-top: 3px; }
@@ -98,7 +98,7 @@ pre { max-width: 100%; box-sizing: border-box; }
   .heading-en { font-size: 12px; margin-left: 7px; }
   .entry-heading { flex-wrap: wrap; gap: 0; margin-bottom: 9px; }
   .entry-heading h3 { width: 100%; margin-bottom: 3px; }
-  .award-row { grid-template-columns: 36px 1fr; gap: 10px; }
+  .award-row { grid-template-columns: 58px 1fr; gap: 10px; }
   .award-content { font-size: 14px; }
   .skills-list > div { grid-template-columns: 70px 1fr; gap: 10px; }
 }
