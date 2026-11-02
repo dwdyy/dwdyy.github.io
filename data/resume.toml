@@ -14,7 +14,7 @@ institution = '电子科技大学'
 location = '成都'
 period = '2024 — 至今'
 degree = '软件工程（互联网安全）本科在读，预计 2028 年毕业'
-details = ['GPA：3.97 / 4.00', '专业排名：大一 7 / 90，大二 4 / 90']
+details = ['GPA：3.97 / 4.00', '大一大二排名：4/90']
 
 [[awards]]
 name = '国家奖学金'
@@ -22,35 +22,15 @@ award = ''
 date = '2026-10'
 kind = 'scholarship'
 [[awards]]
-name = '第 50 届 ICPC 国际大学生程序设计竞赛东亚区总决赛（EC-Final）'
-award = '铜牌'
-date = '2026-02'
-kind = 'bronze'
-[[awards]]
 name = '第 50 届 ICPC 国际大学生程序设计竞赛区域赛 · 南京站'
 award = '金牌'
 date = '2025-11'
 kind = 'gold'
 [[awards]]
-name = '第 50 届 ICPC 国际大学生程序设计竞赛区域赛 · 武汉站'
-award = '银牌'
-date = '2025-11'
-kind = 'silver'
-[[awards]]
-name = '第十六届蓝桥杯总决赛'
-award = '全国一等奖'
-date = '2025-06'
-kind = 'first'
-[[awards]]
 name = '中国高校计算机大赛 · 团体程序设计天梯赛'
 award = '全国个人一等奖'
 date = '2026-05'
 kind = 'first'
-[[awards]]
-name = '第 49 届 ICPC 国际大学生程序设计竞赛区域赛 · 南京站'
-award = '银牌'
-date = '2024-11'
-kind = 'silver'
 
 [[skills]]
 label = '编程语言'
