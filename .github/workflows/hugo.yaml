@@ -1,9 +1,7 @@
 name: Build and deploy Hugo site
 
 on:
-  push:
-    branches:
-      - main
+  # GitHub Pages is intentionally disabled; keep the deployment recipe for reference.
   workflow_dispatch:
 
 permissions:
@@ -21,6 +19,7 @@ defaults:
 
 jobs:
   build:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.166.0
